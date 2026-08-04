@@ -120,8 +120,9 @@ verification for Docker + Kubernetes lives in the **GitHub Actions run**,
 which executes in an isolated runner with dedicated resources — a more
 credible source of truth than a local capture would have been anyway. The
 mvn test screenshot in this repo is from this machine (genuinely run here);
-the container/Kubernetes evidence is the live Actions run linked from the
-README.
+the container/Kubernetes evidence is [Actions run #1](https://github.com/ameyagidh/SDLC/actions/runs/30893127297) —
+completed successfully, all 7 jobs green, `k8s-deploy-verify` (real kind
+cluster + live HTTP calls through the gateway) passed in 3m36s.
 
 ## Resource limits and probes (`k8s/*.yaml`)
 

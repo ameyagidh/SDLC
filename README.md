@@ -45,7 +45,7 @@ Every stage below actually runs and is verified, not aspirational:
    order — to prove the cluster isn't just "green," it's actually serving
    traffic correctly end to end.
 
-See the Actions tab for a live, currently-green run of all three jobs.
+See a real completed run here: [Actions run #1](https://github.com/ameyagidh/SDLC/actions/runs/30893127297) — all 7 jobs green, total duration 4m34s, `k8s-deploy-verify` (the real kind cluster deploy + live HTTP verification) completed in 3m36s.
 
 ## Local development
 
@@ -75,8 +75,11 @@ curl -X POST http://localhost:8080/api/orders \
 |---|---|
 | ![](docs/screenshots/01-mvn-test-all-services.png) | ![](docs/screenshots/02-docker-images-built.png) |
 
-More in [`docs/screenshots/`](docs/screenshots), including the live kind
-cluster deployment output from the GitHub Actions run.
+| GitHub Actions — all 7 jobs green |
+|---|
+| ![](docs/screenshots/03-github-actions-all-green.png) |
+
+More in [`docs/screenshots/`](docs/screenshots).
 
 ## Tech stack
 
